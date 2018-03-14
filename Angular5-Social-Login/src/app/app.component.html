@@ -1,0 +1,19 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div *ngIf="authorized; then proData else login"></div>
+  <ng-template #login>
+    <h1>Sign in</h1>    
+    <button (click)="socialSignIn('facebook')">Sign in with Facebook</button>
+    <button (click)="socialSignIn('google')">Signin in with Google</button>  
+ </ng-template>  
+
+ <ng-template #proData>
+  <img src="{{user.image}}">
+<div>
+  <h4>{{user.name}}</h4>
+  <p>{{user.email}}</p>
+</div> 
+<button class="btn btn-danger" (click)="signOut()">Sign out</button>
+ </ng-template>
+
+
+
