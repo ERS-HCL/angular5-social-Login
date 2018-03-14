@@ -1,0 +1,3 @@
+@import "~bootstrap/dist/css/bootstrap.min.css";
+body{font-family: arial}
+.jumbotron{width:450px; margin:0 auto;}
