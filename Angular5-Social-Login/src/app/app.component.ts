@@ -22,11 +22,13 @@ export class AppComponent {
  
 	private user: SocialUser;
   public authorized: boolean = false;
+  
 
 
   constructor( private socialAuthService: AuthService ) {}
   
-  public socialSignIn(socialPlatform : string) {  	
+  public socialSignIn(socialPlatform : string) {  
+
     let socialPlatformProvider;
     if(socialPlatform == "facebook"){
       socialPlatformProvider = FacebookLoginProvider.PROVIDER_ID;
@@ -37,17 +39,18 @@ export class AppComponent {
     this.socialAuthService.signIn(socialPlatformProvider).then(
       (userData) => {
         console.log(socialPlatform+" sign in data : " , userData);
-        // Now sign-in with userData
+        // Now sign-in with userData        
         if (userData != null) {
                this.authorized = true;
-               this.user = userData;
-               
+               this.user = userData;               
             }       
-            
       }
     );
   }
 
-  
+  public signOut(){
+          this.socialAuthService.signOut();
+          this.authorized = false;
+      }
   
 }
