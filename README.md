@@ -1,5 +1,5 @@
 # Angular5 Social Login Facebook and Google 
-It is a Angular 5 social login project after login user date is populating, here I have used the angular5-social-login plug-in to fetch user data.
+It is a Angular 5 social login project after login user date is populating, here I have used the angular5-social-login plug-in to authenticate social login.
 
 <p align="center">
     <img  alt="Angular5 Social Login" src="img/Angular5-Social-Login.png" class="img-responsive">
