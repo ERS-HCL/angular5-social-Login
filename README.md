@@ -1,5 +1,5 @@
 # Angular5 Social Login Facebook and Google 
-It is a Angular 5 social login project after login user date is populating, here I have used the angular5-social-login plug-in to authenticate social login.
+It is a Angular 5 social login project after login user date is populating, here I have used the angular5-social-login package to authenticate social login.
 
 <p align="center">
     <img  alt="Angular5 Social Login" src="img/Angular5-Social-Login.png" class="img-responsive">
@@ -17,7 +17,7 @@ Download  or Clone the repository in your machine and run following command.
     - ng serve
     
 
-## Below are the steps for who want to write by own
+## Below are the steps for who want to build step by step
 
 ### Install via npm 
 
